@@ -1,0 +1,142 @@
+body {
+            background: linear-gradient(135deg, #8B4513 0%, #D2691E 50%, #F4A460 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Georgia', serif;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                repeating-linear-gradient(90deg, rgba(0,0,0,0.03) 0px, transparent 1px, transparent 50px, rgba(0,0,0,0.03) 51px),
+                repeating-linear-gradient(0deg, rgba(0,0,0,0.03) 0px, transparent 1px, transparent 50px, rgba(0,0,0,0.03) 51px);
+            pointer-events: none;
+        }
+        .login-container {
+            background: linear-gradient(to bottom, #FFF8DC 0%, #FAEBD7 100%);
+            border-radius: 10px;
+            box-shadow: 
+                0 10px 40px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.5);
+            padding: 45px;
+            width: 100%;
+            max-width: 450px;
+            border: 3px solid #8B4513;
+            position: relative;
+            z-index: 1;
+        }
+        .login-header {
+            text-align: center;
+            margin-bottom: 35px;
+            border-bottom: 2px solid #8B4513;
+            padding-bottom: 20px;
+        }
+        .book-icon {
+            font-size: 48px;
+            color: #8B4513;
+            margin-bottom: 15px;
+        }
+        .login-header h2 {
+            color: #5D4037;
+            font-weight: 700;
+            margin-bottom: 8px;
+            font-family: 'Georgia', serif;
+            letter-spacing: 1px;
+        }
+        .login-header p {
+            color: #8B4513;
+            font-size: 15px;
+            font-style: italic;
+        }
+        .form-label {
+            color: #5D4037;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .form-control {
+            border: 2px solid #D2B48C;
+            background-color: #FFFAF0;
+            border-radius: 6px;
+            padding: 12px;
+            transition: all 0.3s;
+        }
+        .form-control:focus {
+            border-color: #8B4513;
+            box-shadow: 0 0 0 0.2rem rgba(139, 69, 19, 0.15);
+            background-color: #FFF;
+        }
+        .form-control::placeholder {
+            color: #C4A777;
+        }
+        .input-group-text {
+            background-color: #D2B48C;
+            border: 2px solid #D2B48C;
+            color: #5D4037;
+        }
+        .btn-login {
+            background: linear-gradient(to bottom, #8B4513 0%, #6B3410 100%);
+            border: none;
+            padding: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+            color: #FFF8DC;
+            font-family: 'Georgia', serif;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .btn-login:hover {
+            background: linear-gradient(to bottom, #6B3410 0%, #5D2A0F 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .form-check-input:checked {
+            background-color: #8B4513;
+            border-color: #8B4513;
+        }
+        .form-check-label {
+            color: #5D4037;
+        }
+        .divider {
+            text-align: center;
+            margin: 25px 0;
+            position: relative;
+        }
+        .divider::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+            background: #D2B48C;
+        }
+        .divider span {
+            background: #FAEBD7;
+            padding: 0 15px;
+            color: #8B4513;
+            position: relative;
+            font-size: 13px;
+        }
+        
+        .register-link {
+            text-align: center;
+            margin-top: 15px;
+            padding-top: 20px;
+            border-top: 1px solid #D2B48C;
+        }
+        .register-link a {
+            color: #8B4513;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .register-link a:hover {
+            color: #5D4037;
+        }
